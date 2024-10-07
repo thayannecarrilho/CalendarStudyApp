@@ -18,17 +18,4 @@ O **Calendar Study App** é um aplicativo que permite aos usuários gerenciar su
 - **Banco de Dados**: MySQL
 - **Outras Bibliotecas**: Axios, CORS, Body-Parser
 
-## Estrutura do Projeto
-
-```
-/calendar-app
-├── /client              # Aplicativo React
-│   ├── /src
-│   ├── package.json
-└── /server              # Aplicativo Node.js
-    ├── /models
-    ├── /routes
-    ├── package.json
-    └── server.js
-```
 
