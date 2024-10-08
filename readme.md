@@ -1,4 +1,5 @@
-# Calendar Study App com React e Node (Em construção 🚧)
+# Calendar Study App com React e Node 
+## (Em construção 🚧)
 
 ## Descrição
 
@@ -17,5 +18,4 @@ O **Calendar Study App** é um aplicativo que permite aos usuários gerenciar su
 - **Backend**: Node.js, Express
 - **Banco de Dados**: MySQL
 - **Outras Bibliotecas**: Axios, CORS, Body-Parser
-
 
