@@ -1,16 +1,15 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from './pages/Home'
-import StudyHours from './pages/StudyHours'
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Home from './components/Home/Home';
+import PageData from './components/PageData/PageData';
 
 const App = () => {
-  return (
-      <Router>
+    return (
         <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/study-hours' element={<StudyHours/>}/>
+            <Route path="/" element={<Home />} />
+            <Route path="/date/:date" element={<PageData />} />
         </Routes>
-      </Router>
-  );
+    );
 };
 
 export default App;
