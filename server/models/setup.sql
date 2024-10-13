@@ -1,6 +1,6 @@
-CREATE DATABASE IF NOT EXISTS calendarstudy;
+CREATE DATABASE IF NOT EXISTS task_manager;
 
-USE calendarstudy;
+USE task_manager;
 
 CREATE TABLE IF NOT EXISTS tasks (
     id INT AUTO_INCREMENT PRIMARY KEY,

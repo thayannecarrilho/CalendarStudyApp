@@ -6,7 +6,7 @@ const db = mysql.createConnection({
     host: 'localhost',
     user: 'root', // substitua pelo seu usuário
     password: 'thayanne', // substitua pela sua senha
-    database: 'calendarstudy'
+    database: 'task_manager'
 });
 
 // Adicionar Tarefa
@@ -21,7 +21,7 @@ router.post('/', (req, res) => {
 
 // Obter Tarefas por Data
 router.get('/:date', (req, res) => {
-    const sql = 'SELECT * FROM tasks WHERE date = ?';
+    const sql = 'SELECT * FROM tasks WHERE date = ? ORDER BY start_time ASC';
     db.query(sql, [req.params.date], (err, results) => {
         if (err) return res.status(500).send(err);
         res.status(200).json(results);
